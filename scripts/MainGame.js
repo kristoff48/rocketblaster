@@ -24,6 +24,7 @@ BasicGame.Game.prototype = {
 			 ship.body.collideWorldBounds = true;
 
 			 //Create the bullets group, set the physics, multiples and boundaries
+			 bullets = this.add.group();
 			 bullets.enableBody = true;
 			 bullets.physicsBodyType = Phaser.Physics.ARCADE;
 			 bullets.createMultiple(30, 'bullet', 0, false);
@@ -40,6 +41,7 @@ BasicGame.Game.prototype = {
 	update: function () {
 		//execute 'createUfo','createLife','moveShip','collisionDetection' function
       this.moveShip();
+			//moves the ship and fires bullet from keyboard controls
 			moveShip: function() {
 				//if left arrow key pressed move players ship left
 				if (cursors.left.isDown){
