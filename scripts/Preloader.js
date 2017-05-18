@@ -8,7 +8,7 @@ BasicGame.Preloader.prototype = {
 
 	preload: function () {
         //Displays a loading screen message while the assets are loaded into memory
-				this.PreloaderText = this.add.text(this.world.centerX, this.world.centerY, 'Loading things...',
+				this.PreloaderText = this.add.text(this.world.centerX, this.world.centerY, 'Loading things... hi my name kris i make game and stuff thx i cant get start button working for some reason so i write here until i find out how to fix problem thanks cheers',
 			{
 				fontSize: '96px',
 				fill: '#fff',
