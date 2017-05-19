@@ -44,7 +44,7 @@ BasicGame.Game.prototype = {
 			//moves the ship and fires bullet from keyboard controls
 			moveShip: function() {
 				//if left arrow key pressed move players ship left
-				if (cursors.left.isDown){
+				if (cursors.left.isDown) {
 					//move to the left
 					ship.body.velocity.x = -200;
 				}
@@ -71,6 +71,6 @@ BasicGame.Game.prototype = {
 					bullet.body.velocity.y = -400;
 				}
 			}
-	}
+
 
 };
