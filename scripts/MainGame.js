@@ -44,7 +44,6 @@ BasicGame.Game.prototype = {
 			 lives.setAll('anchor.x', 0.5);
 			 lives.setAll('anchor.y', 0.5);
 
-
 			 //Create the bullets group, set the physics, multiples and boundaries
 			 bullets = this.add.group();
 			 bullets.enableBody = true;
@@ -66,6 +65,7 @@ BasicGame.Game.prototype = {
 			this.createUfo();
 			this.createLife();
 		},
+
 			//moves the ship and fires bullet from keyboard controls
 			moveShip: function() {
 				//if left arrow key pressed move players ship left

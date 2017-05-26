@@ -7,6 +7,7 @@ var logo;
 BasicGame.MainMenu.prototype = {
 
 	create: function () {
+
     //We've already loaded the assets so we'll move straight into the MainMenu
 		//Here all we are doing is playing music, adding a picture and a button
 		//I will modify the MainMenu to suit your game
@@ -26,7 +27,7 @@ BasicGame.MainMenu.prototype = {
 
 	startGame: function () {
 		//And start the actual game
-		this.game.state.start('game');
+		this.game.state.start('Game');
 	}
 
 };
